@@ -26,6 +26,11 @@ static NSString *const RCTShowDevMenuNotification = @"RCTShowDevMenuNotification
 
 RCT_EXPORT_MODULE();
 
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
 + (void)initialize
 {
     RCTSwapInstanceMethods([UIWindow class], @selector(motionEnded:withEvent:), @selector(handleShakeEvent:withEvent:));
