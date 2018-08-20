@@ -1,6 +1,6 @@
 {
   "name": "react-native-shake-event",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Add shake event to your React Native app",
   "main": "js/index.js",
   "files": [
@@ -23,8 +23,7 @@
     "shake-event-ios"
   ],
   "author": "Jadson Lourenco <jadsonlourenco@gmail.com>",
-  "contributors": [
-    {
+  "contributors": [{
       "name": "Jadson Lourenco",
       "email": "jadsonlourenco@gmail.com"
     },

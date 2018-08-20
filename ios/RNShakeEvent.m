@@ -26,11 +26,6 @@ static NSString *const RCTShowDevMenuNotification = @"RCTShowDevMenuNotification
 
 RCT_EXPORT_MODULE();
 
-+ (BOOL)requiresMainQueueSetup
-{
-    return YES;
-}
-
 + (void)initialize
 {
     RCTSwapInstanceMethods([UIWindow class], @selector(motionEnded:withEvent:), @selector(handleShakeEvent:withEvent:));
@@ -57,6 +52,11 @@ RCT_EXPORT_MODULE();
 {
     [_bridge.eventDispatcher sendDeviceEventWithName:@"ShakeEvent"
                                                 body:nil];
+}
+
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
 }
 
 @end
@@ -89,6 +89,11 @@ RCT_EXPORT_MODULE();
 {
     [_bridge.eventDispatcher sendDeviceEventWithName:@"ShakeEvent"
                                                 body:nil];
+}
+
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
 }
 
 @end
