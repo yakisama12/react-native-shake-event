@@ -1,6 +1,6 @@
 {
   "name": "react-native-shake-event",
-  "version": "4.0.3",
+  "version": "4.0.5",
   "description": "Add shake event to your React Native app",
   "main": "js/index.js",
   "files": [
